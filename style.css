@@ -1,0 +1,129 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+
+    margin: 0px;
+    padding: 0px;
+    background-image: url(rude1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: hard-light;
+}
+#outer_container{
+   
+    width: 100vw;
+    height: 750px;
+    margin-top:0px;
+}
+#inside_container{ 
+    margin-top: 0px;
+    margin: auto;
+    width: 900px;
+    height: 650px;
+  
+}
+#first_display{ 
+    margin-top: 35px;
+    width: 900px;
+    height: 130px;
+    text-align: center;
+    align-items: center;
+}
+#arrow{
+    position: relative;
+    font-size: 60px;
+    font-weight: 50px;
+    text-align: center;
+    transform: rotate(90deg);
+    animation: bounce 1s infinite;
+}
+@keyframes bounce{
+    0%{top:0px;}
+    50%{top:20px;color: blue;}
+    100%{top:0px;}
+}
+#button{
+    margin-top: auto;
+    width: 900px;
+    height: 130px;
+}
+#nner_d{
+    width: 200px;
+    height: 100px;
+    margin: auto;
+}
+ #inner_b{
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    border-radius: 14px;
+    box-shadow: black;
+    box-shadow: 4px 4px 0 0;
+
+}
+#inner_b:focus{
+    outline: none;
+}
+#inner_b:hover{
+    transition:1ms;
+    background-color: rgb(216, 216, 216);
+}
+#second_display{
+    width: 900px;
+    height: 130px;
+    text-align: center;
+}
+
+@media(max-width:768px){
+    #outer_container{
+        width: 385px;
+        height: 736px;
+    }
+    #inside_container{ 
+        margin: auto;
+        width: 260px;
+        height: 550px;        
+    }
+    #first_display{ 
+        margin-top: 80px;
+        width: 260px;
+        height: 60px;
+    }
+    #button{
+        margin-top:70px;
+        width: 260px;
+        height: 70px;
+    }
+    #nner_d{
+        width:  190px;
+        height: 60px;
+        margin: auto;
+    }
+     #inner_b{
+        width: 180px;
+        height: 57px;
+        box-shadow: 2px 2px 0 0;
+        transition: all 90ms linear;
+    }
+    #second_display{
+        width: 260px;
+        height: 70px;
+    }
+    #arrow{
+        position: relative;
+        font-size: 50px;
+        font-weight: 40px;
+        text-align: center;
+        transform: rotate(90deg);
+        animation: bounce 1s infinite;
+        margin-top: -32px;
+    }
+    @keyframes bounce{
+        0%{top:0px;}
+        50%{top:10px;color: blue;}
+        100%{top:0px;}
+    }
+}
